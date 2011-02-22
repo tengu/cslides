@@ -1,0 +1,22 @@
+
+* cslides: ミニマルなUnix用スライドショープログラム
+  * 画像ファイルパスを標準入力に入れてやると数秒それぞれの画像を見せてくれる
+  * find . -name '*.jpg' | cslides [秒数]
+
+* Q: これ何がいいの？
+  * A: 殆どの人に利用価値はない
+  * Unixのシェル環境での使用を想定している
+  * imlib2とX11の「hello world」のような簡単な例
+  * ちゃんと使えるスライドショーの出発点になればなと
+
+* 依存: Xlib, imlib2 
+  * debian: sudo dpkg -i libimlib2-dev
+  * freebsd: cd /usr/ports/graphics/imlib2; sudo make install
+
+* コンパイル
+  * vi Makefile
+  * make
+
+ブログでperlとかシェルとかでやるスライドショーのことを書いたら「スライドショー C言語」というクエリからトラフィック
+が来るようになった。クエリの意図が読めないけど、こんなものかなと作ってみた。
+

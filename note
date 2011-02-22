@@ -1,0 +1,12 @@
+
+* docs
+  ~/src/imlib2-1.4.2/src/bin/imlib2_test.c
+  file:///usr/share/doc/libimlib2-dev/html/index.html
+
+* scale propotionally 
+
+read filepath stream and render.
+
+how to go from epegs pixels to X's Drawable?
+might have to do go down to the level of XPutImage/XPutPixel .
+can epeg's pixel be converted to the bitmap that XCreateBitmapFromData expects?

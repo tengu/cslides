@@ -1,0 +1,18 @@
+
+* cslides: a minimal, unixy slideshow viewer.
+  * feed image path stream to stdin and it will display each image for a second.
+  * usage:  find . -name '*.jpg' | cslides [delay-in-seconds]
+
+* Why would I want to use this? 
+  * You probably don't; it is probably too barebone for most people.
+  * It is for unix shell environment.
+  * More of a hello-world of imlib2 and X programming.
+  * Hopefully it will be a starting poit for usable slideshow viewer.
+
+* dependencies: Xlib, imlib2 
+  * debian: sudo dpkg -i libimlib2-dev
+  * freebsd: cd /usr/ports/graphics/imlib2; sudo make install
+
+* building
+  * vi Makefile
+  * make
